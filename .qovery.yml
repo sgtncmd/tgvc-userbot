@@ -1,0 +1,15 @@
+---
+application:
+  name: "radio"
+  project: "ocean"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "radio"
+  version: "4.4"
+routers:
+- name: "main-radio"
+  routes:
+  - application_name: "radio"
+    paths:
+    - "/*"
